@@ -1,0 +1,42 @@
+name: "Chore/Task"
+description: "Routine task, refactor, or maintenance work"
+title: "[Chore] "
+labels:
+  - chore
+
+body:
+  - type: markdown
+    attributes:
+      value: >
+        **Thanks for contributing a Chore/Task!**
+        Use this form for routine or maintenance tasks that aren't strictly bug fixes or feature requests.
+        <br/><br/>
+
+  - type: input
+    id: summary
+    attributes:
+      label: "Short Summary"
+      description: "Provide a concise description of the chore or task."
+      placeholder: "Clean up unused code, refactor X, update dependencies..."
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: "Reason / Rationale"
+      description: "Explain why this task is needed. How does it improve the project?"
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Planned Steps"
+      description: "Outline the steps to complete this chore."
+      placeholder: |
+        1. Remove deprecated function ...
+        2. Update tests ...
+        3. Verify everything still passes ...
+
+  - type: textarea
+    id: definition_of_done
+    attributes:
+      label: "Definition of Done"
+      description: "What does success look like? How do we know this chore is completed?"
